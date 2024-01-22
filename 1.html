@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <script>
+      const zodiacSign = (prompt('Какой у вас знак зодиака') ?? ' ').trim().toLowerCase()
+      console.log(zodiacSign)
+
+      let alertText
+
+      switch(zodiacSign) {
+        case 'овен':
+          alertText = 'Здравствуйте, овен'
+          break
+        case 'телец':
+          alertText = 'Здравствуйте, телец'
+          break
+        case 'близнецы':
+          alertText = 'Здравствуйте, близнецы'
+          break
+        case 'рак':
+          alertText = 'Здравствуйте, рак'
+          break
+        case 'лев':
+          alertText = 'Здравствуйте, лев'
+          break
+        case 'дева':
+          alertText = 'Здравствуйте, дева'
+          break
+        case 'весы':
+          alertText = 'Здравствуйте, весы'
+          break
+        case 'скорпион':
+          alertText = 'Здравствуйте, скорпион'
+          break
+        case 'стрелец':
+          alertText = 'Здравствуйте, стрелец'
+          break
+        case 'козерог':
+          alertText = 'Здравствуйте, козерог'
+          break
+        case 'водолей':
+          alertText = 'Здравствуйте, водолей'
+          break
+        case 'рыбы':
+          alertText = 'Здравствуйте, рыбы'
+          break
+        default:
+          alertText = 'Здравствуйте, не знаю что это за знак такой'
+      }
+
+      alert(alertText)
+    </script>
+</body>
+</html>

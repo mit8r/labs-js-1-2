@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const secretNumber = 10
+    
+    alert('Я загадал число больше 5, угадайте какое')
+
+    while (true) {
+      const answer = prompt('Введите число')
+      const number = Number.parseFloat(answer)
+
+      if (isNaN(number)) {
+        alert("Введите пожалуйста число")
+      } else if (number <= 5) {
+        alert("Введите пожалуйста число больше 5")
+      } else if (number !== secretNumber) {
+        alert("Неверно")
+      } else {
+        alert("Угадали")
+        break
+      }
+    }
+</script>
+</body>
+</html>
